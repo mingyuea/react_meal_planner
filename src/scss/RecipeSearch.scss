@@ -1,0 +1,33 @@
+@import 'measurements';
+
+$labelFt: 0.8em;
+$btnColor: rgba(0, 153, 255,1);
+
+.srchCont {
+	position: absolute;
+	left: $rightBlockLEdge;
+	top: $blockTop;
+	width: $rightBlockWidth;
+	height: 15%;
+	margin: 0;
+	display: inline-block;
+	background-color: $sharedBGC;
+	border-radius: 0px 10px 0px 0px;
+	padding: 5px;
+}
+
+.srchLabel{
+	font-size: $labelFt;
+	font-family: Futura;
+}
+
+.srchBtn{
+	background-color:$btnColor;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+
+.srchBtn:hover{
+	cursor: pointer;
+}

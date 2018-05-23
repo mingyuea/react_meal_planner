@@ -1,0 +1,56 @@
+@import 'measurements';
+
+$schedBG: rgba(237, 241, 247, 1);
+$cellBorder: rgba(141, 141, 142, 1);
+$imgWidth: 30%;
+$nameWidth: 60%;
+$cancelWidth: 10%;
+$hoverColor: rgba(165, 181, 206, 1);
+
+%cellShared{
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+.schedCont{
+	position: absolute;
+	left: $leftBlockLEdge;
+	width: $leftBlockWidth;
+	height:$blockHeight;
+	top: $blockTop;
+	background-color: $sharedBGC;
+	z-index: 20;
+	border-radius: 10px 0px 0px 10px;
+	padding: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.schedCell{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	border: 1px solid $cellBorder;
+}
+
+.schedCell:hover{
+	background-color: $hoverColor;
+	cursor: pointer;
+}
+
+.cellImg{
+	@extend %cellShared;
+	width: $imgWidth;
+}
+
+.cellName{
+	@extend %cellShared;
+	width: $nameWidth;
+}
+
+.cellX{
+	@extend %cellShared;
+	width: $cancelWidth;
+}

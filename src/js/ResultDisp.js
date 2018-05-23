@@ -1,4 +1,5 @@
 import React from 'react';
+import Style from '../scss/ResultDisp.scss';
 
 class ResultDisp extends React.Component {
 	constructor(props){
@@ -35,21 +36,21 @@ class ResultDisp extends React.Component {
 		let resList = 'empty';
 		if(this.props.results.length > 0){
 				resList = this.props.results.map((item, ind) => 
-				<div id={ind}>
-					<img src={item.recipe.image} />
-					<p>{item.recipe.label}</p>
-					<div onClick={this.handleAdd}>+</div>
+				<div id={ind} className={Style.resCell}>
+					<img src={item.recipe.image} className={Style.cellImg} />
+					<p className={Style.cellName}>{item.recipe.label}</p>
+					<div onClick={this.handleAdd} className={Style.cellAdd}>+</div>
 				</div>
 			);
 		}
 
 		return(
-			<div style={this.props.style}>
-				<div onClick={this.handleClose}>X</div>
+			<div style={this.props.style} className={Style.resCont}>
+				<div className={Style.searchClose} onClick={this.handleClose}>X</div>
 				<h2>Search Results</h2>
 				{resList}
-				<div onClick={this.handlePrev}> &#8592 </div>
-				<div onClick={this.handleNext}> &#8594 </div>
+				<div className={Style.next} onClick={this.handlePrev}> Prev </div>
+				<div className={Style.prev} onClick={this.handleNext}> Next </div>
 			</div>
 		);
 	}

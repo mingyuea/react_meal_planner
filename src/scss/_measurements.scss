@@ -1,0 +1,12 @@
+$leftBlockLEdge: 5%;
+$leftBlockWidth: 40%;
+$rightBlockLEdge: 45%;
+$rightBlockWidth: 50%;
+$blockHeight: 80%;
+$searchHeight: 15%; 
+$blockTop: 10%;
+$botDispTop: $blockTop + $searchHeight;
+$botDispHeight: $blockHeight - $searchHeight;
+$sharedBGC: rgba(237, 241, 247, 1);
+$sharedBorder: 2px solid rgba(160, 164, 170, 1);
+

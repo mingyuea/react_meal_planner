@@ -1,0 +1,96 @@
+@import 'measurements';
+
+$cellBorder: rgba(141, 141, 142, 1);
+$imgWidth: 25%;
+$nameWidth: 65%;
+$plusWidth: 10%;
+$hoverColor: rgba(165, 181, 206, 1);
+
+%cellShared{
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+%btnHover{
+	cursor: pointer;
+	color:rgba(74, 125, 226, 1);
+}
+
+.resCont{
+	position: absolute;
+	left: $rightBlockLEdge;
+	width: $rightBlockWidth;
+	height:$botDispHeight;
+	top: $botDispTop;
+	background-color: $sharedBGC;
+	z-index: 50;
+	border-radius: 0px 10px 10px 0px;
+	padding: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.resCell{
+	position: relative;
+	margin: 5% ;
+	padding: 0;
+	width: 95%;
+	height: 25%;
+	border: 1px solid $cellBorder;
+}
+
+.cellImg{
+	@extend %cellShared;
+	width: $imgWidth;
+}
+
+.cellName{
+	@extend %cellShared;
+	width: $nameWidth;
+	font-size: 0.9em;
+}
+
+.cellAdd{
+	@extend %cellShared;
+	font-size: 1.6em;
+	width: $plusWidth;
+	top: 0;
+}
+
+.cellAdd:hover{
+	@extend %btnHover;
+}
+
+.searchClose{
+	position: relative;
+	border: 1px solid black;
+	width: 5%;
+	padding: 2px;
+	left: 90%;
+}
+
+.searchClose:hover{
+	@extend %btnHover;
+}
+
+.next{
+	position: relative;
+	display: inline-block;
+	left: 40%;
+}
+
+.next:hover{
+	@extend %btnHover;
+}
+
+.prev{
+	position: relative;
+	display: inline-block;
+	left: 60%
+}
+
+.prev:hover{
+	@extend %btnHover;
+}

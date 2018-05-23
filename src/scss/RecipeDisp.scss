@@ -1,0 +1,24 @@
+@import 'measurements';
+
+.dispCont{
+	position: absolute;
+	top: $botDispTop;
+	left: $rightBlockLEdge;
+	width: $rightBlockWidth;
+	height: $botDispHeight;
+	background-color: $sharedBGC;
+	border: $sharedBorder;
+	overflow-y: auto;
+	padding: 15px;
+};
+
+.dispImg{
+	height: 70%;
+	width: 55%;
+	display: block;
+}
+
+.dispLink{
+	margin: 15px;
+	display: block;
+}
