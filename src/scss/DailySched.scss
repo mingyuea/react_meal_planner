@@ -3,7 +3,7 @@
 $schedBG: rgba(237, 241, 247, 1);
 $cellBorder: rgba(141, 141, 142, 1);
 $imgWidth: 30%;
-$nameWidth: 60%;
+$nameWidth: 55%;
 $cancelWidth: 10%;
 $hoverColor: rgba(165, 181, 206, 1);
 
@@ -31,7 +31,7 @@ $hoverColor: rgba(165, 181, 206, 1);
 .schedCell{
 	position: relative;
 	width: 100%;
-	height: 20%;
+	height: 25%;
 	border: 1px solid $cellBorder;
 }
 

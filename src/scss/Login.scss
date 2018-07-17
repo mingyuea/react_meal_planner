@@ -1,0 +1,36 @@
+@import 'initShared';
+
+.cont{
+	@extend %contShared;
+
+	left: 30%;
+	top: 12%;
+	width: 40%;
+	height: 76%;
+}
+
+.textCont{
+	position: relative;
+	left:5%;
+	display: block;
+	margin: 10px;
+}
+
+.textArea{
+	position: relative;
+	left:5%;
+	display: block;
+	margin: 5px;
+}
+
+.btn{
+	@extend %btnShared;
+}
+
+.btn:hover{
+	@extend %btnHoverShared;
+}
+
+.errMsg{
+	color: red;
+}

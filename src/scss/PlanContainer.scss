@@ -10,6 +10,14 @@ $hiddenBGColor: rgba(101, 102, 104, 0.6);
 	background-color: $blockBGColor;
 }
 
+.initCont{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	z-index: 100;
+	background-color: rgba(155, 163, 162, 0.4);
+}
+
 .hiddenCont{
 	height: 100%;
 	width: 100%;
@@ -37,5 +45,6 @@ $hiddenBGColor: rgba(101, 102, 104, 0.6);
 .title{
 	position: absolute;
 	left: 25%;
+	top: 2%;
 	z-index: 1;
 }

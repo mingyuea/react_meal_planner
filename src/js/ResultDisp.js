@@ -48,6 +48,7 @@ class ResultDisp extends React.Component {
 			<div style={this.props.style} className={Style.resCont}>
 				<div className={Style.searchClose} onClick={this.handleClose}>X</div>
 				<h2>Search Results</h2>
+				<div>Search API provided by Edamam</div>
 				{resList}
 				<div className={Style.next} onClick={this.handlePrev}> Prev </div>
 				<div className={Style.prev} onClick={this.handleNext}> Next </div>
